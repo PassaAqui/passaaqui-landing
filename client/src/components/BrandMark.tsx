@@ -3,6 +3,8 @@
  * sinalização e descoberta. Evitar aparência genérica de software corporativo.
  */
 
+import logo from "../../assets/logo/logo.webp";
+
 type BrandMarkProps = {
   invert?: boolean;
   compact?: boolean;
@@ -12,7 +14,7 @@ export default function BrandMark({ invert = false, compact = false }: BrandMark
   return (
     <div className={`brand-mark ${invert ? "brand-mark--invert" : ""}`} aria-label="PassaAqui">
       <img
-        src="../../assets/logo/logo.webp"
+        src={logo}
         alt="Símbolo do PassaAqui"
         className="brand-mark__symbol"
         style={{ borderRadius: 52 }}
