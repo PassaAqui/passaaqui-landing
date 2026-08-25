@@ -4,6 +4,7 @@
  */
 
 import { ArrowUpRight, Landmark, Palette, ShoppingBasket, UtensilsCrossed, VenetianMask } from "lucide-react";
+import experiencesImage from "../../assets/experience/experiences.webp";
 
 const experiences = [
   { title: "Patrimônio", detail: "Prédios, praças e histórias que seguem em pé.", icon: Landmark, tone: "experience-card--ivory", number: "01" },
@@ -27,7 +28,7 @@ export default function ExperienceGrid() {
 
         <div className="experience-grid">
           <article className="experience-feature">
-            <img src="../../assets/experience/experiences.webp" alt="Exploradores conhecendo um ateliê e o comércio local do Recife" />
+            <img src={experiencesImage} alt="Exploradores conhecendo um ateliê e o comércio local do Recife" />
             <div className="experience-feature__shade" />
             <div className="experience-feature__content">
               <span>TRILHA EM DESTAQUE</span>
