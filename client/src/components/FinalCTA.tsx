@@ -14,12 +14,30 @@ export default function FinalCTA() {
         <div className="final-image" aria-hidden="true" />
         <div className="final-overlay" aria-hidden="true" />
         <div className="page-frame final-content">
-          <p className="section-eyebrow section-eyebrow--orange">A cidade está chamando</p>
-          <h2 className="display-title final-title">Pronto para passar<br />por Recife de um<br />jeito <em>diferente?</em></h2>
+          <p className="section-eyebrow section-eyebrow--orange">
+            A cidade está chamando
+          </p>
+          <h2 className="display-title final-title">
+            Pronto para passar
+            <br />
+            por Recife de um
+            <br />
+            jeito <em>diferente?</em>
+          </h2>
           <p>Sua próxima aventura começa aqui.</p>
           <div className="hero-actions">
-            <Button asChild className="button-primary button-large"><a href="#jornada">Explorar Recife <ArrowDownRight size={19} /></a></Button>
-            <Button asChild variant="outline" className="button-ghost button-large"><a href="#comerciantes">Sou comerciante</a></Button>
+            <Button asChild className="button-primary button-large">
+              <a href="#jornada">
+                Explorar Recife <ArrowDownRight size={19} />
+              </a>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              className="button-ghost button-large"
+            >
+              <a href="#comerciantes">Sou comerciante</a>
+            </Button>
           </div>
         </div>
       </section>
@@ -35,9 +53,15 @@ export default function FinalCTA() {
             <span>Senac Paulista — 2026</span>
           </div>
           <div className="social-links" aria-label="Redes sociais do projeto">
-            <span title="Instagram ainda não informado"><Instagram size={18} /></span>
-            <span title="GitHub ainda não informado"><Github size={18} /></span>
-            <span title="LinkedIn ainda não informado"><Linkedin size={18} /></span>
+            <span title="Instagram ainda não informado">
+              <Instagram size={18} />
+            </span>
+            <span title="GitHub ainda não informado">
+              <Github size={18} />
+            </span>
+            <span title="LinkedIn ainda não informado">
+              <Linkedin size={18} />
+            </span>
           </div>
         </div>
       </footer>

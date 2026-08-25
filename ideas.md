@@ -76,23 +76,23 @@ O texto precisa ser direto, jovem, confiante e culturalmente situado. Frases cur
 
 ## Achados iniciais do PDF (páginas 1–5)
 
-| Página | Achado principal | Implicação para a landing page |
-| --- | --- | --- |
-| 1 | Capa com fundo noturno do Recife, azul-marinho dominante e logotipo laranja | Hero com contraste forte, atmosfera urbana e branding imediato |
-| 2 | Mensagem “Recife na palma da mão” e quatro blocos temáticos | Seção de proposta de valor com módulos visuais curtos |
-| 3 | Narrativa do desequilíbrio entre litoral e centro histórico com gráfico | Seção de impacto/problema com visual editorial e dados enxutos |
-| 4 | Dois públicos: exploradores urbanos e mestres criativos | Seção segmentada para turista e comerciante/artesão |
-| 5 | Jornada “Descobrir → Interagir → Converter” e diferencial O2O | Base para seções “Como funciona” e “Recompensa real & retirada física” |
+| Página | Achado principal                                                            | Implicação para a landing page                                         |
+| ------ | --------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| 1      | Capa com fundo noturno do Recife, azul-marinho dominante e logotipo laranja | Hero com contraste forte, atmosfera urbana e branding imediato         |
+| 2      | Mensagem “Recife na palma da mão” e quatro blocos temáticos                 | Seção de proposta de valor com módulos visuais curtos                  |
+| 3      | Narrativa do desequilíbrio entre litoral e centro histórico com gráfico     | Seção de impacto/problema com visual editorial e dados enxutos         |
+| 4      | Dois públicos: exploradores urbanos e mestres criativos                     | Seção segmentada para turista e comerciante/artesão                    |
+| 5      | Jornada “Descobrir → Interagir → Converter” e diferencial O2O               | Base para seções “Como funciona” e “Recompensa real & retirada física” |
 
 ## Achados complementares do PDF (páginas 6–10)
 
-| Página | Achado principal | Implicação para a landing page |
-| --- | --- | --- |
-| 6 | Inspirações explícitas: Google Maps, Pokémon GO e Geocaching | Reforçar linguagem de mapa, descoberta geolocalizada e progressão por exploração física |
-| 7 | Modelo comercial em três frentes: B2B2C, B2B e B2G | Organizar a seção de impacto/ecossistema em pilares claros sem excesso técnico |
-| 8 | Monetização resumida por blocos escuros com métrica grande à direita | Criar cards de benefício e valor com numeração ou destaque de fácil leitura |
-| 9 | Diferenciais “invisibilidade” e “alma O2O”, com stack tecnológica no rodapé | Traduzir diferenciais em linguagem de produto real, sem deixar a tecnologia roubar o protagonismo |
-| 10 | Estratégia de divulgação com POIs, hotelaria e fotografia do Recife histórico | Aproveitar lógica de pontos de contato físicos e sinalização urbana na narrativa da página |
+| Página | Achado principal                                                              | Implicação para a landing page                                                                    |
+| ------ | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| 6      | Inspirações explícitas: Google Maps, Pokémon GO e Geocaching                  | Reforçar linguagem de mapa, descoberta geolocalizada e progressão por exploração física           |
+| 7      | Modelo comercial em três frentes: B2B2C, B2B e B2G                            | Organizar a seção de impacto/ecossistema em pilares claros sem excesso técnico                    |
+| 8      | Monetização resumida por blocos escuros com métrica grande à direita          | Criar cards de benefício e valor com numeração ou destaque de fácil leitura                       |
+| 9      | Diferenciais “invisibilidade” e “alma O2O”, com stack tecnológica no rodapé   | Traduzir diferenciais em linguagem de produto real, sem deixar a tecnologia roubar o protagonismo |
+| 10     | Estratégia de divulgação com POIs, hotelaria e fotografia do Recife histórico | Aproveitar lógica de pontos de contato físicos e sinalização urbana na narrativa da página        |
 
 ## Decisões reforçadas pela segunda metade do PDF
 

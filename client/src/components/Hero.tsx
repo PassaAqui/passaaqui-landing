@@ -16,11 +16,23 @@ const navigation = [
 export default function Hero() {
   return (
     <section className="hero-shell" id="inicio">
-      <div className="hero-image" aria-hidden="true" />
+      <div className="hero-image-wrapper" aria-hidden="true">
+        <img
+          src="/hero/hero-background.webp"
+          alt=""
+          className="hero-image"
+          fetchPriority="high"
+          decoding="async"
+        />
+      </div>
       <div className="hero-noise" aria-hidden="true" />
 
       <header className="site-header">
-        <a href="#inicio" className="focus-ring" aria-label="PassaAqui, voltar ao início">
+        <a
+          href="#inicio"
+          className="focus-ring"
+          aria-label="PassaAqui, voltar ao início"
+        >
           <BrandMark invert />
         </a>
 
@@ -46,8 +58,8 @@ export default function Hero() {
             em aventura.
           </h1>
           <p className="hero-summary reveal-four">
-            Explore o Centro do Recife, encontre histórias que não cabem no guia e transforme cada passo em
-            uma recompensa real.
+            Explore o Centro do Recife, encontre histórias que não cabem no guia
+            e transforme cada passo em uma recompensa real.
           </p>
           <div className="hero-actions reveal-five">
             <Button asChild className="button-primary button-large">
@@ -55,7 +67,11 @@ export default function Hero() {
                 Começar aventura <ArrowDownRight size={19} strokeWidth={2.5} />
               </a>
             </Button>
-            <Button asChild variant="outline" className="button-ghost button-large">
+            <Button
+              asChild
+              variant="outline"
+              className="button-ghost button-large"
+            >
               <a href="#como-funciona">
                 <Play size={15} fill="currentColor" /> Como funciona
               </a>
@@ -63,7 +79,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <aside className="hero-mission-card reveal-six" aria-label="Resumo da missão">
+        <aside
+          className="hero-mission-card reveal-six"
+          aria-label="Resumo da missão"
+        >
           <div className="hero-mission-card__top">
             <Route size={19} />
             <span>rota em destaque</span>
@@ -71,16 +90,22 @@ export default function Hero() {
           </div>
           <div className="hero-mission-card__name">Explore todo o Recife</div>
           <div className="hero-mission-card__bottom">
-            <span><Sparkles size={14} /> até 450 XP</span>
+            <span>
+              <Sparkles size={14} /> até 450 XP
+            </span>
             <span>2.5km / 7km</span>
           </div>
-          <div className="mission-progress"><span /></div>
+          <div className="mission-progress">
+            <span />
+          </div>
         </aside>
       </div>
 
       <div className="hero-footer page-frame" aria-hidden="true">
         <span>arraste para descobrir</span>
-        <div className="scroll-glyph"><span /></div>
+        <div className="scroll-glyph">
+          <span />
+        </div>
         <span>RECIFE // BRASIL</span>
       </div>
     </section>

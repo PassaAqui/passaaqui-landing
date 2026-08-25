@@ -10,9 +10,15 @@ type BrandMarkProps = {
   compact?: boolean;
 };
 
-export default function BrandMark({ invert = false, compact = false }: BrandMarkProps) {
+export default function BrandMark({
+  invert = false,
+  compact = false,
+}: BrandMarkProps) {
   return (
-    <div className={`brand-mark ${invert ? "brand-mark--invert" : ""}`} aria-label="PassaAqui">
+    <div
+      className={`brand-mark ${invert ? "brand-mark--invert" : ""}`}
+      aria-label="PassaAqui"
+    >
       <img
         src={logo}
         alt="Símbolo do PassaAqui"
