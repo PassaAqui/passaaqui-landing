@@ -4,6 +4,7 @@
  */
 
 import { Compass, MapPin, Navigation, Plus } from "lucide-react";
+import map from "../../assets/map/map-sample.webp";
 
 const missions = [
   { area: "Recife Antigo", task: "Marco histórico", xp: "+150 XP", position: "map-pin--one" },
@@ -28,7 +29,7 @@ export default function MissionMap() {
         </div>
 
         <div className="mission-map">
-          <img src="../../assets/map/map-sample.webp" alt="Ilustração do Centro do Recife como mapa de exploração" />
+          <img src={map} alt="Ilustração do Centro do Recife como mapa de exploração" />
           <div className="map-topbar" aria-hidden="true">
             <span><Navigation size={15} fill="currentColor" /> trilha urbana</span>
             <span>04 bairros ativos</span>
