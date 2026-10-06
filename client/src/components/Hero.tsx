@@ -17,7 +17,8 @@ const navigation = [
 const GITHUB_APK_DOWNLOAD_URL = "https://github.com/PassaAqui/passaaqui-mobile/releases/download/v1.0.0/passaaqui.apk";
 
 export default function Hero() {
-  const [canDownloadApp, setCanDownloadApp] = useState(false);
+  const [canDownloadApp, setCanDownloadApp] = useState(true);
+  const [isIOSOrSafari, setIsIOSOrSafari] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined" || !window.navigator) return;
@@ -36,9 +37,11 @@ export default function Hero() {
       /Apple Computer/i.test(vendor) &&
       !/Chrome|Chromium|CriOS|Edg|OPR|FxiOS/i.test(ua);
 
-    // O botão deve aparecer apenas se for Android ou Web (qualquer OS desktop/android),
-    // exceto quando for iOS ou usar Safari.
-    if (!isIOS && !isSafari) {
+    if (isIOS || isSafari) {
+      setIsIOSOrSafari(true);
+      setCanDownloadApp(false);
+    } else {
+      setIsIOSOrSafari(false);
       setCanDownloadApp(true);
     }
   }, []);
@@ -95,20 +98,35 @@ export default function Hero() {
                 Começar aventura <ArrowDownRight size={19} strokeWidth={2.5} />
               </a>
             </Button>
-            {canDownloadApp && (
-              <Button
-                asChild
-                variant="outline"
-                className="button-ghost button-large"
-              >
-                <a
-                  href={GITHUB_APK_DOWNLOAD_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+            {isIOSOrSafari ? (
+              <div className="flex flex-col items-start gap-1">
+                <Button
+                  disabled
+                  variant="outline"
+                  className="button-ghost button-large opacity-50 cursor-not-allowed"
                 >
                   <Download size={15} /> Baixar app
-                </a>
-              </Button>
+                </Button>
+                <span className="text-xs text-amber-300/80 tracking-wide font-mono">
+                  App indisponível para iOS. Disponível apenas para Android.
+                </span>
+              </div>
+            ) : (
+              canDownloadApp && (
+                <Button
+                  asChild
+                  variant="outline"
+                  className="button-ghost button-large"
+                >
+                  <a
+                    href={GITHUB_APK_DOWNLOAD_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Download size={15} /> Baixar app
+                  </a>
+                </Button>
+              )
             )}
           </div>
         </div>
