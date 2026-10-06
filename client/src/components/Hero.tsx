@@ -3,7 +3,8 @@
  * grande tipografia modular e sinais discretos de rota. O texto deve respirar sobre azul-marinho.
  */
 
-import { ArrowDownRight, Play, Route, Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowDownRight, Download, Route, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BrandMark from "./BrandMark";
 
@@ -13,7 +14,34 @@ const navigation = [
   ["Para a cidade", "#impacto"],
 ];
 
+const GITHUB_APK_DOWNLOAD_URL = "https://github.com/PassaAqui/passaaqui-mobile/releases/download/v1.0.0/passaaqui.apk";
+
 export default function Hero() {
+  const [canDownloadApp, setCanDownloadApp] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.navigator) return;
+
+    const ua = window.navigator.userAgent || "";
+    const vendor = window.navigator.vendor || "";
+
+    // Detecção de iOS (iPhone, iPad, iPod ou iPadOS no Safari/Mac desktop touch)
+    const isIOS =
+      /iPad|iPhone|iPod/.test(ua) ||
+      (window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
+
+    // Detecção de Safari: tipicamente contém "Safari" e vendor Apple, mas não contém Chrome, Chromium, CriOS, etc.
+    const isSafari =
+      /Safari/i.test(ua) &&
+      /Apple Computer/i.test(vendor) &&
+      !/Chrome|Chromium|CriOS|Edg|OPR|FxiOS/i.test(ua);
+
+    // O botão deve aparecer apenas se for Android ou Web (qualquer OS desktop/android),
+    // exceto quando for iOS ou usar Safari.
+    if (!isIOS && !isSafari) {
+      setCanDownloadApp(true);
+    }
+  }, []);
   return (
     <section className="hero-shell" id="inicio">
       <div className="hero-image-wrapper" aria-hidden="true">
@@ -67,15 +95,21 @@ export default function Hero() {
                 Começar aventura <ArrowDownRight size={19} strokeWidth={2.5} />
               </a>
             </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="button-ghost button-large"
-            >
-              <a href="#como-funciona">
-                <Play size={15} fill="currentColor" /> Como funciona
-              </a>
-            </Button>
+            {canDownloadApp && (
+              <Button
+                asChild
+                variant="outline"
+                className="button-ghost button-large"
+              >
+                <a
+                  href={GITHUB_APK_DOWNLOAD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download size={15} /> Baixar app
+                </a>
+              </Button>
+            )}
           </div>
         </div>
 
