@@ -4,7 +4,7 @@
  */
 
 import { useEffect, useState } from "react";
-import { ArrowDownRight, Download, Route, Sparkles } from "lucide-react";
+import { ArrowDownRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BrandMark from "./BrandMark";
 
@@ -93,21 +93,21 @@ export default function Hero() {
             e transforme cada passo em uma recompensa real.
           </p>
           <div className="hero-actions reveal-five">
-            <Button asChild className="button-primary button-large">
+            <Button asChild className="button-primary button-large w-full sm:w-auto justify-center">
               <a href="#jornada">
                 Começar aventura <ArrowDownRight size={19} strokeWidth={2.5} />
               </a>
             </Button>
             {isIOSOrSafari ? (
-              <div className="flex flex-col items-start gap-1">
+              <div className="flex flex-col items-start gap-1.5 w-full sm:w-auto">
                 <Button
                   disabled
                   variant="outline"
-                  className="button-ghost button-large opacity-50 cursor-not-allowed"
+                  className="button-ghost button-large opacity-50 cursor-not-allowed w-full sm:w-auto justify-center"
                 >
                   <Download size={15} /> Baixar app
                 </Button>
-                <span className="text-xs text-amber-300/80 tracking-wide font-mono">
+                <span className="text-[0.7rem] sm:text-xs text-amber-300/90 tracking-wide font-mono max-w-[280px] sm:max-w-xs leading-tight">
                   App indisponível para iOS. Disponível apenas para Android.
                 </span>
               </div>
@@ -116,7 +116,7 @@ export default function Hero() {
                 <Button
                   asChild
                   variant="outline"
-                  className="button-ghost button-large"
+                  className="button-ghost button-large w-full sm:w-auto justify-center"
                 >
                   <a
                     href={GITHUB_APK_DOWNLOAD_URL}
@@ -130,27 +130,6 @@ export default function Hero() {
             )}
           </div>
         </div>
-
-        <aside
-          className="hero-mission-card reveal-six"
-          aria-label="Resumo da missão"
-        >
-          <div className="hero-mission-card__top">
-            <Route size={19} />
-            <span>rota em destaque</span>
-            <span className="hero-mission-card__status">ao vivo</span>
-          </div>
-          <div className="hero-mission-card__name">Explore todo o Recife</div>
-          <div className="hero-mission-card__bottom">
-            <span>
-              <Sparkles size={14} /> até 450 XP
-            </span>
-            <span>2.5km / 7km</span>
-          </div>
-          <div className="mission-progress">
-            <span />
-          </div>
-        </aside>
       </div>
 
       <div className="hero-footer page-frame" aria-hidden="true">
