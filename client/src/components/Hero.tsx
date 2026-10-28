@@ -14,7 +14,7 @@ const navigation = [
   ["Para a cidade", "#impacto"],
 ];
 
-const GITHUB_APK_DOWNLOAD_URL = "https://github.com/PassaAqui/passaaqui-mobile/releases/download/v1.0.0/passaaqui.apk";
+const GITHUB_APK_DOWNLOAD_URL = "https://github.com/PassaAqui/passaaqui-mobile/releases/download/1.1.0/passaaqui.apk";
 
 export default function Hero() {
   const [canDownloadApp, setCanDownloadApp] = useState(true);
