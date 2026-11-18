@@ -9,7 +9,7 @@ const steps = [
   {
     number: "01",
     title: "Explore",
-    body: "Abra o mapa e siga uma trilha pelo Centro do Recife.",
+    body: "Abra o mapa e siga uma trilha por Pernambuco.",
     icon: MapPinned,
   },
   {
@@ -39,9 +39,9 @@ export default function Journey() {
         <div className="vertical-label">01 / O CONCEITO</div>
         <div className="intro-layout">
           <div>
-            <p className="section-eyebrow">não passe pelo Recife</p>
+            <p className="section-eyebrow">não passe por Pernambuco</p>
             <h2 className="display-title section-title">
-              O Recife é<br />
+              Pernambuco é<br />
               <em>o seu jogo.</em>
             </h2>
           </div>
@@ -61,7 +61,7 @@ export default function Journey() {
           </div>
         </div>
         <p className="statement-strip">
-          <span>não passe pelo Recife.</span> PasseAqui.
+          <span>não passe por Pernambuco.</span> PasseAqui.
         </p>
       </section>
 

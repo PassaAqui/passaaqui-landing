@@ -14,7 +14,7 @@ const navigation = [
   ["Para a cidade", "#impacto"],
 ];
 
-const GITHUB_APK_DOWNLOAD_URL = "https://github.com/PassaAqui/passaaqui-mobile/releases/download/1.1.0/passaaqui.apk";
+const GITHUB_APK_DOWNLOAD_URL = "https://github.com/PassaAqui/passaaqui-mobile/releases/download/v1.1.1/passaaqui.apk";
 
 export default function Hero() {
   const [canDownloadApp, setCanDownloadApp] = useState(true);
@@ -89,7 +89,7 @@ export default function Hero() {
             em aventura.
           </h1>
           <p className="hero-summary reveal-four">
-            Explore o Centro do Recife, encontre histórias que não cabem no guia
+            Explore o estado de Pernambuco, encontre histórias que não cabem no guia
             e transforme cada passo em uma recompensa real.
           </p>
           <div className="hero-actions reveal-five">
